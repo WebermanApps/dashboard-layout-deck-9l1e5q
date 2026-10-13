@@ -6,7 +6,8 @@
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Hind,system-ui,sans-serif;font-size:16px;overflow-x:hidden}
 h1,h2,h3,.k{font-family:Khand,Hind,sans-serif;font-weight:700}
 .wrap{max-width:560px;margin:0 auto;padding:max(10px,env(safe-area-inset-top)) 16px 24px}
-.top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.top{display:flex;align-items:center;gap:4px}.top a,.top button{white-space:nowrap}.top .back{margin-right:auto}.dk{display:inline-flex;align-items:center;min-height:44px;min-width:44px;padding:0 4px;color:var(--mut);font:600 .85rem Hind;text-decoration:underline}
+.bdb{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:64px;margin:0 0 14px;background:var(--pri);color:#fafafa;border:2px solid var(--pri);font:700 1.35rem Khand;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}.bdb svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .back{display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;padding:0 10px 0 4px;color:var(--fg);text-decoration:none;font-family:Khand;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem}
 .back svg,.sbtn svg,.ab svg,.nb svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .sbtn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border:1.5px solid var(--yes);background:#fff;color:var(--yes);font:700 .95rem Khand;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
@@ -39,7 +40,7 @@ footer{text-align:center;padding:12px 0 calc(20px + env(safe-area-inset-bottom))
 </style></head><body>
 <div class="wrap">
 <div class="top"><a class="back mw-hover" href="https://webermanapps.github.io/coach-dashboard/"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>Coach Dashboard</a>
-<button class="sbtn mw-hover" id="early" type="button"><svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-6z"/></svg>Submit</button></div>
+<a class="dk mw-hover" href="https://webermanapps.github.io/branding-djqmb410/decks/">Deck Building</a><button class="sbtn mw-hover" id="early" type="button"><svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-6z"/></svg>Submit</button></div>
 <h1>Dashboard Layout Deck</h1><p class="sub">100 Layout Ideas For Every Agent Dashboard. Swipe Right For Yes, Left For No.</p>
 <div class="prog"><span id="count">1 / 100</span><div class="bar"><i id="pb"></i></div><span id="ans">0 Answered</span></div>
 <div id="play"><div class="stage" id="stage" data-ptr-ignore></div>
@@ -48,7 +49,7 @@ footer{text-align:center;padding:12px 0 calc(20px + env(safe-area-inset-bottom))
 <button class="ab love mw-hover" data-a="love" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Love</button>
 <button class="ab yes mw-hover" data-a="yes" type="button"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Yes</button></div>
 <button class="skip" id="skip" type="button">Skip</button></div>
-<div id="done"><h2>All Done</h2><p class="sub">Your answers are saved on this device. Tap Submit to send them to Coach.</p><div class="sum" id="sum"></div>
+<div id="done"><a class="bdb mw-hover" id="bdb" href="https://webermanapps.github.io/branding-djqmb410/decks/"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>Back to Deck Building</a><h2 id="dh">All Done</h2><p class="sub" id="dp">Your answers are saved on this device. Tap Submit to send them to Coach.</p><div class="sum" id="sum"></div>
 <div id="sub"></div><div class="row2"><button class="ob mw-hover" id="copy" type="button">Copy Results</button><button class="ob mw-hover" id="review" type="button">Review Skipped</button></div><p class="msg" id="cmsg" role="status"></p></div>
 <div class="share"><button class="ob mw-hover" id="share" type="button">Share</button><span class="msg" id="smsg" role="status"></span></div>
 </div><footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer><div class="toast" id="toast">Sent</div>
