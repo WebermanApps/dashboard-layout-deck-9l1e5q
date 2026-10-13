@@ -1,0 +1,808 @@
+{
+ "deck": "dashboard-layout-deck",
+ "title": "Dashboard Layout Deck",
+ "owner": "coach",
+ "created": "2026-10-13",
+ "cards": [
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "One Shared Top Bar",
+   "text": "Every dashboard opens with the same slim bar: Apps Home on the left, agent name in the middle, Share Status on the right. Same height and order everywhere.",
+   "viz": "topbar",
+   "id": "dl001"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Title Before Report",
+   "text": "Put the dashboard title first and the Morning or Evening Report right under it. Today about half the dashboards show the report above the title, so you land without knowing where you are.",
+   "viz": "titlefirst",
+   "id": "dl002"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Report As One Line That Expands",
+   "text": "Show the report as a single summary line, like Evening Report, 5 Updates, that opens on tap. The full text no longer pushes everything below the fold.",
+   "viz": "collapse",
+   "id": "dl003"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Sticky Mini Header On Scroll",
+   "text": "After you scroll past the title, a thin bar sticks to the top with the agent name and Apps Home link. It hides again when you scroll up to the top.",
+   "viz": "sticky",
+   "id": "dl004"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Urgent Count Pill In The Top Bar",
+   "text": "A small red pill such as 2 Urgent sits in the top bar and opens the collapsed urgent dropdown. Nothing urgent means no pill at all.",
+   "viz": "pill",
+   "id": "dl005"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Decisions Owed Right Under The Report",
+   "text": "Put the Decisions You Owe dropdown directly under the report on every dashboard, so the thing that needs you is always in the same spot.",
+   "viz": "order",
+   "id": "dl006"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Same Section Order Everywhere",
+   "text": "Use one order on all dashboards: Report, Decisions, Apps, Open Items, Recent Work. You learn it once and know where to look on each one.",
+   "viz": "order",
+   "id": "dl007"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Consistent Dashboard Names",
+   "text": "Name every page Agent Name Command Center. Today some say just Legal, Portfolio, Miles Agent or Command Center, which reads unevenly in the tab and the top bar.",
+   "viz": "titlefirst",
+   "id": "dl008"
+  },
+  {
+   "theme": "Top Bar And Reports",
+   "tag": "All",
+   "title": "Featured Deck Slot Below The Report",
+   "text": "Give new decks one fixed Featured slot right under the report instead of stacking big hero cards above the title.",
+   "viz": "featured",
+   "id": "dl009"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Condensed Rows That Expand",
+   "text": "Turn Open Items and Recent Work into one-line rows with a small chevron. Tap a row to see the detail, tap again to close.",
+   "viz": "rows",
+   "id": "dl010"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Show Five Then See All",
+   "text": "Show the five newest Recent Work rows and a See All row that expands the rest. Long histories stop dominating the page.",
+   "viz": "seeall",
+   "id": "dl011"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Status Dot On Each Row",
+   "text": "A small colored dot at the start of each row shows Done, In Progress or Waiting. Color stays a micro-dose, never full colored rows.",
+   "viz": "dots",
+   "id": "dl012"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Right-Aligned Dates In Rows",
+   "text": "Put dates in a narrow right column in grey so titles line up on the left and the eye can scan straight down.",
+   "viz": "stamp",
+   "id": "dl013"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Two-Line Card Limit",
+   "text": "Cap card descriptions at two lines with a fade, and show the rest on expand. Cards stay even height in the grid.",
+   "viz": "rows",
+   "id": "dl014"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Tighter Vertical Rhythm",
+   "text": "Use one spacing scale (8, 16, 24, 32) for gaps between rows, cards and sections. It removes the uneven gaps seen between sections today.",
+   "viz": "rhythm",
+   "id": "dl015"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Counts In Section Headers",
+   "text": "Put the number of items next to each section header, for example Open Items 7, so you know the size before expanding.",
+   "viz": "pill",
+   "id": "dl016"
+  },
+  {
+   "theme": "Rows And Density",
+   "tag": "All",
+   "title": "Stat Tiles As One Strip",
+   "text": "Put headline numbers in one even strip of small tiles under the title, all the same height, instead of loose numbers scattered in cards.",
+   "viz": "tiles",
+   "id": "dl017"
+  },
+  {
+   "theme": "Lists And Sorting",
+   "tag": "All",
+   "title": "A To Z Apps List",
+   "text": "List each dashboard's apps A to Z by default, with a small sort switch for A to Z, Newest and Most Used.",
+   "viz": "az",
+   "id": "dl018"
+  },
+  {
+   "theme": "Lists And Sorting",
+   "tag": "All",
+   "title": "Sort Control On Long Lists",
+   "text": "Any list over ten rows gets a small Sort dropdown in its header: Newest, Oldest, A to Z, Priority.",
+   "viz": "az",
+   "id": "dl019"
+  },
+  {
+   "theme": "Lists And Sorting",
+   "tag": "All",
+   "title": "Filter Chips Above Lists",
+   "text": "Small outline chips such as All, Waiting, Done filter a list in place without leaving the page.",
+   "viz": "chips",
+   "id": "dl020"
+  },
+  {
+   "theme": "Lists And Sorting",
+   "tag": "All",
+   "title": "Priority Groups Collapse By Default",
+   "text": "Group Open Items into P0, P1, P2 dropdowns, with P0 open and the rest closed with counts.",
+   "viz": "collapse",
+   "id": "dl021"
+  },
+  {
+   "theme": "Carousels",
+   "tag": "All",
+   "title": "Apps As A Carousel",
+   "text": "Show each agent's apps as a swipeable carousel of cards with arrows and dots, instead of a long stacked list on the phone.",
+   "viz": "carousel",
+   "id": "dl022"
+  },
+  {
+   "theme": "Carousels",
+   "tag": "All",
+   "title": "Recent Work Carousel On Phone",
+   "text": "On the phone, show Recent Work as a sideways carousel of small cards so the page stays short.",
+   "viz": "carousel",
+   "id": "dl023"
+  },
+  {
+   "theme": "Carousels",
+   "tag": "All",
+   "title": "Carousel Arrows At 44 Pixels",
+   "text": "Make carousel arrows and dots at least 44 pixels to tap, with the dots inside a larger hit area.",
+   "viz": "carousel",
+   "id": "dl024"
+  },
+  {
+   "theme": "Carousels",
+   "tag": "All",
+   "title": "Peek The Next Card",
+   "text": "Let the next carousel card peek in at the right edge so it is obvious you can swipe.",
+   "viz": "carousel",
+   "id": "dl025"
+  },
+  {
+   "theme": "Carousels",
+   "tag": "All",
+   "title": "Grid On Desktop, Carousel On Phone",
+   "text": "The same cards become a carousel on the phone and a plain grid at 1470 and up, so nothing is hidden on big screens.",
+   "viz": "grid",
+   "id": "dl026"
+  },
+  {
+   "theme": "Typography",
+   "tag": "All",
+   "title": "One Type Scale For All Dashboards",
+   "text": "Use one shared scale for title, section header, row title and body text. Today the title ranges from 28 to 104 pixels across dashboards.",
+   "viz": "type",
+   "id": "dl027"
+  },
+  {
+   "theme": "Typography",
+   "tag": "All",
+   "title": "Scale Text Up On Big Screens",
+   "text": "Raise body text to about 20 pixels at 2560 wide. Several dashboards keep 16 pixel text on a 2560 screen, which is hard to read from a distance.",
+   "viz": "type",
+   "id": "dl028"
+  },
+  {
+   "theme": "Typography",
+   "tag": "All",
+   "title": "Smaller Hero Title On Phone",
+   "text": "Keep the phone title around 32 pixels so it fits on one or two lines and leaves room for the report.",
+   "viz": "type",
+   "id": "dl029"
+  },
+  {
+   "theme": "Typography",
+   "tag": "All",
+   "title": "Short Uppercase Labels Only",
+   "text": "Use small uppercase Khand labels only for short tags like Ready or Waiting, never for sentences.",
+   "viz": "type",
+   "id": "dl030"
+  },
+  {
+   "theme": "Typography",
+   "tag": "All",
+   "title": "Readable Line Length",
+   "text": "Cap paragraphs at about 70 characters wide, even when the page is wide, so long text stays easy to read.",
+   "viz": "measure",
+   "id": "dl031"
+  },
+  {
+   "theme": "Big Screens",
+   "tag": "All",
+   "title": "Content Width Cap Or Real Grid",
+   "text": "At 2560, either cap content at about 1600 pixels or switch to a three or four column grid. Several pages stretch rows across the full 2560.",
+   "viz": "grid",
+   "id": "dl032"
+  },
+  {
+   "theme": "Big Screens",
+   "tag": "All",
+   "title": "Two Column Desktop Layout",
+   "text": "At 1470, put Report and Decisions on the left and Apps and Open Items on the right, so the page is one screen tall.",
+   "viz": "twocol",
+   "id": "dl033"
+  },
+  {
+   "theme": "Big Screens",
+   "tag": "All",
+   "title": "Side Rail Navigation On Wide Screens",
+   "text": "On screens 1470 and wider, show a thin left rail with section links that highlights as you scroll.",
+   "viz": "rail",
+   "id": "dl034"
+  },
+  {
+   "theme": "Big Screens",
+   "tag": "All",
+   "title": "Bigger Cards On Large Monitors",
+   "text": "At 2560, grow card padding and icon size with the text so cards do not look like tiny tiles on a big monitor.",
+   "viz": "grid",
+   "id": "dl035"
+  },
+  {
+   "theme": "Big Screens",
+   "tag": "All",
+   "title": "Visible Focus Rings For Arrow Keys",
+   "text": "Show a clear focus ring on every card and row so the dashboard works from a keyboard or TV remote.",
+   "viz": "hover",
+   "id": "dl036"
+  },
+  {
+   "theme": "Phone Layout",
+   "tag": "All",
+   "title": "Shorter Phone Pages",
+   "text": "Target under about four phone screens of scrolling by collapsing long sections. Some dashboards run past ten screens today.",
+   "viz": "phone",
+   "id": "dl037"
+  },
+  {
+   "theme": "Phone Layout",
+   "tag": "All",
+   "title": "Thumb-Reach Main Actions",
+   "text": "Put the main action for a card at the bottom right of the card on the phone, where the thumb lands.",
+   "viz": "phone",
+   "id": "dl038"
+  },
+  {
+   "theme": "Phone Layout",
+   "tag": "All",
+   "title": "Full-Width Rows On Phone",
+   "text": "On the phone, rows run edge to edge with a hairline divider instead of boxed cards, saving side padding.",
+   "viz": "rows",
+   "id": "dl039"
+  },
+  {
+   "theme": "Phone Layout",
+   "tag": "All",
+   "title": "Add To Home Screen Everywhere",
+   "text": "Give every dashboard the small Add To Home Screen button WellNest has, placed in the top bar next to Apps Home.",
+   "viz": "topbar",
+   "id": "dl040"
+  },
+  {
+   "theme": "Phone Layout",
+   "tag": "All",
+   "title": "No Inline Paragraph Walls On Phone",
+   "text": "Any text block over four lines on the phone becomes a collapsed row with a one-line summary.",
+   "viz": "collapse",
+   "id": "dl041"
+  },
+  {
+   "theme": "Icons, Color And Hover",
+   "tag": "All",
+   "title": "Small Drawn Line Icons",
+   "text": "Give each section and app a small drawn line icon in one stroke weight, and no emoji anywhere.",
+   "viz": "icons",
+   "id": "dl042"
+  },
+  {
+   "theme": "Icons, Color And Hover",
+   "tag": "All",
+   "title": "One Accent Per Dashboard",
+   "text": "Each agent gets one accent color used only for its pill, active tab and link underline. The rest stays black, white and grey.",
+   "viz": "color",
+   "id": "dl043"
+  },
+  {
+   "theme": "Icons, Color And Hover",
+   "tag": "All",
+   "title": "Subtle Hover Lift",
+   "text": "Cards and rows lift one pixel with a soft shadow on hover, and no motion on touch screens.",
+   "viz": "hover",
+   "id": "dl044"
+  },
+  {
+   "theme": "Icons, Color And Hover",
+   "tag": "All",
+   "title": "Accent Bar On Urgent Rows Only",
+   "text": "Use a thin left color bar only on urgent or waiting rows, so color always means something.",
+   "viz": "dots",
+   "id": "dl045"
+  },
+  {
+   "theme": "Icons, Color And Hover",
+   "tag": "All",
+   "title": "Warm Light Background Everywhere",
+   "text": "Use the same warm white page background and pure white cards on every dashboard so they feel like one family.",
+   "viz": "color",
+   "id": "dl046"
+  },
+  {
+   "theme": "Navigation And Footer",
+   "tag": "All",
+   "title": "Apps Home Always Top Left",
+   "text": "The Apps Home link sits in the same top-left spot on every dashboard, 44 pixels tall, same tab.",
+   "viz": "topbar",
+   "id": "dl047"
+  },
+  {
+   "theme": "Navigation And Footer",
+   "tag": "All",
+   "title": "Jump Links Under The Title",
+   "text": "A short row of jump links (Decisions, Apps, Open, Recent) under the title takes you straight to each section.",
+   "viz": "chips",
+   "id": "dl048"
+  },
+  {
+   "theme": "Navigation And Footer",
+   "tag": "All",
+   "title": "Back To Top Button",
+   "text": "After two screens of scrolling, a small Back To Top button appears above the Share row.",
+   "viz": "phone",
+   "id": "dl049"
+  },
+  {
+   "theme": "Navigation And Footer",
+   "tag": "All",
+   "title": "Share Just Above The Footer",
+   "text": "Share always sits in page flow right above the footer, never in the top bar or a fixed bar.",
+   "viz": "footer",
+   "id": "dl050"
+  },
+  {
+   "theme": "Navigation And Footer",
+   "tag": "All",
+   "title": "Footer Link Tap Area",
+   "text": "Give the Built By Max Weberman link a 44 pixel tall tap area while keeping the text small and quiet.",
+   "viz": "footer",
+   "id": "dl051"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Apps Home",
+   "title": "Apps Home Agent Rows A To Z",
+   "text": "Sort the agents inside Work, Personal and AI Resources A to Z, with an option to sort by most recent update.",
+   "viz": "az",
+   "id": "dl052"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Apps Home",
+   "title": "Apps Home Big Screen Grid",
+   "text": "At 2560 the three columns stay small with 16 pixel text. Scale tiles and text up so it reads from across the room.",
+   "viz": "grid",
+   "id": "dl053"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Apps Home",
+   "title": "Apps Home Last Updated Dots",
+   "text": "Add a small status dot to each agent row showing whether its report is fresh today.",
+   "viz": "dots",
+   "id": "dl054"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Apps Home",
+   "title": "Apps Home Footer Tap Target",
+   "text": "The footer Max Weberman link measured under 44 pixels tall. Add padding around it.",
+   "viz": "footer",
+   "id": "dl055"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Grok Bot",
+   "title": "Grok Bot Evening Report Collapse",
+   "text": "The Evening Report fills most of the first screen as a long bulleted block. Collapse it to one line with a count.",
+   "viz": "collapse",
+   "id": "dl056"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Grok Bot",
+   "title": "Grok Bot Team Feed As Rows",
+   "text": "Show the Team Feed panel as condensed rows with agent name and time, expanding on tap, instead of text paragraphs.",
+   "viz": "rows",
+   "id": "dl057"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Grok Bot",
+   "title": "Grok Bot Apps Home Link Top Left",
+   "text": "The Apps Home link is not in the top area on Grok Bot. Add it top left like every other dashboard.",
+   "viz": "topbar",
+   "id": "dl058"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Blog",
+   "title": "Blog Drafts As A Carousel",
+   "text": "Fourteen drafts sit in stacked cards on the phone. Show them as a carousel with title, status and one Open button.",
+   "viz": "carousel",
+   "id": "dl059"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Blog",
+   "title": "Blog Article Text Off The Dashboard",
+   "text": "Full article sections (contracts, depreciation and more) render on the dashboard. Link to each draft instead so the page gets much shorter.",
+   "viz": "phone",
+   "id": "dl060"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Blog",
+   "title": "Blog Width Cap At 2560",
+   "text": "The Blog page stretches to the full 2560 width. Cap it or move drafts into a four-column grid.",
+   "viz": "grid",
+   "id": "dl061"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Blog",
+   "title": "Blog Sort Drafts",
+   "text": "Add a sort on the drafts list: Ready First, Newest, A to Z.",
+   "viz": "az",
+   "id": "dl062"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Blueprint",
+   "title": "Blueprint Title Above The Update Banner",
+   "text": "Blueprint opens with an 8 Updates banner before the house title. Move the title to the top and collapse the updates under it.",
+   "viz": "titlefirst",
+   "id": "dl063"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Blueprint",
+   "title": "Blueprint 3D Hero Smaller On Desktop",
+   "text": "The 3D model hero takes most of the 1470 screen. Shrink it to half width with the update list beside it.",
+   "viz": "twocol",
+   "id": "dl064"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Branding Agent",
+   "title": "Branding Chip Tap Targets",
+   "text": "About 19 controls (filter checkboxes and Share) measured under 44 pixels on the phone. Enlarge the chips.",
+   "viz": "chips",
+   "id": "dl065"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Branding Agent",
+   "title": "Branding Deck List Condensed",
+   "text": "The page is about 10,000 pixels tall on the phone. Turn the 22 decks being built into condensed rows that expand.",
+   "viz": "rows",
+   "id": "dl066"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Branding Agent",
+   "title": "Branding Accent Swatches Carousel",
+   "text": "Show Accent Colors and Brand Files as carousels so they stop adding long scroll.",
+   "viz": "carousel",
+   "id": "dl067"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Coach",
+   "title": "Coach Questionnaire Collapsed",
+   "text": "The Top Coaching Suggestions questionnaire fills the first screens. Show it as one Featured card that opens the questions.",
+   "viz": "featured",
+   "id": "dl068"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Coach",
+   "title": "Coach Title Scales At 1470",
+   "text": "The Coach title stays the same size at 1470 as on the phone. Step it up with the shared type scale.",
+   "viz": "type",
+   "id": "dl069"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Coach",
+   "title": "Coach Routines As A Compact Table",
+   "text": "Routines are four cards. Show them as one compact list of name and time, aligned in two columns.",
+   "viz": "rows",
+   "id": "dl070"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Construction",
+   "title": "Construction Title Before Ready For You",
+   "text": "Ready For You and Hidden Valley text sit above the title. Move the title up and collapse the ready items.",
+   "viz": "titlefirst",
+   "id": "dl071"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Construction",
+   "title": "Construction Needs You Tap Target",
+   "text": "The Needs You control measured under 44 pixels. Give it a full-height tap area.",
+   "viz": "chips",
+   "id": "dl072"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Construction",
+   "title": "Construction Stat Strip Scales Up",
+   "text": "The 25, 2 of 2 and Nov 5 stat strip and title stay the same size at 2560. Scale them up.",
+   "viz": "tiles",
+   "id": "dl073"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Dump",
+   "title": "Dump Priority Pills As Filters",
+   "text": "The 21 Open, P0 and P1 pills could filter the list on tap, turning them into real controls.",
+   "viz": "chips",
+   "id": "dl074"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Dump",
+   "title": "Dump Thin Columns At 2560",
+   "text": "At 2560 the three Dump columns are thin and the page is short. Use wider cards and larger text.",
+   "viz": "grid",
+   "id": "dl075"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Japan Cottage",
+   "title": "Japan Cottage Apps Home Link First",
+   "text": "Apps Home sits under the title block. Move it to the top-left spot.",
+   "viz": "topbar",
+   "id": "dl076"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Japan Cottage",
+   "title": "Japan Cottage Big Screen Scale",
+   "text": "At 2560 the title stays 34 pixels and body 16 pixels across the full width. Apply the big-screen scale and a width cap.",
+   "viz": "type",
+   "id": "dl077"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Japan Cottage",
+   "title": "Japan Cottage Two Apps Side By Side",
+   "text": "Show the two Japan apps as two equal cards side by side on desktop instead of a narrow left list.",
+   "viz": "twocol",
+   "id": "dl078"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Jokes",
+   "title": "Jokes Title Above Fresh Start",
+   "text": "The Jokes title appears below the report and the ideas carousel. Put the title first.",
+   "viz": "titlefirst",
+   "id": "dl079"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Jokes",
+   "title": "Jokes Bits As Expanding Rows",
+   "text": "Show Bits In Progress as one-line rows that expand to the full bit, instead of open cards.",
+   "viz": "rows",
+   "id": "dl080"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Legal",
+   "title": "Legal Matters As Condensed Rows",
+   "text": "Open Legal Matters show full paragraphs. Use one-line rows with status and next date that expand.",
+   "viz": "rows",
+   "id": "dl081"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Legal",
+   "title": "Legal Report Collapsed",
+   "text": "The Evening Report bullets sit open above the matters. Collapse it to one summary line.",
+   "viz": "collapse",
+   "id": "dl082"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Portfolio",
+   "title": "Portfolio Dashboards As Carousel",
+   "text": "Show the Portfolio sub-dashboards (Live, Speeding and more) as a carousel with a small line chart icon each.",
+   "viz": "carousel",
+   "id": "dl083"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Portfolio",
+   "title": "Portfolio Watch Item Pill",
+   "text": "Move the 1 Watch Item into the top bar as a pill that opens a collapsed dropdown.",
+   "viz": "pill",
+   "id": "dl084"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Prop",
+   "title": "Prop Page Title",
+   "text": "Prop has no main title on the page. Add Prop Command Center above the property switcher.",
+   "viz": "titlefirst",
+   "id": "dl085"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Prop",
+   "title": "Prop Property Switcher Stays",
+   "text": "The Mellow Wood and Wickfield switcher works well. Keep it and reuse the same pattern on other multi-project dashboards.",
+   "viz": "carousel",
+   "id": "dl086"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Prop",
+   "title": "Prop Decision Rows Expand",
+   "text": "Decisions Max Owes are full sentences. Make them one line with an expand for the detail.",
+   "viz": "rows",
+   "id": "dl087"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Research",
+   "title": "Research Carousel Dots Tap Size",
+   "text": "On desktop about 11 carousel dots and controls measured under 44 pixels. Enlarge their hit area.",
+   "viz": "carousel",
+   "id": "dl088"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Research",
+   "title": "Research Title Above The Deck",
+   "text": "The Next Steps deck sits above the Research title. Move it to the Featured slot under the title.",
+   "viz": "featured",
+   "id": "dl089"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Scout",
+   "title": "Scout Page Length On Phone",
+   "text": "Scout is about 10,000 pixels tall on the phone. Collapse the 30-Day Plan, Peer Comparison and Takeaways into dropdowns.",
+   "viz": "phone",
+   "id": "dl090"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Scout",
+   "title": "Scout Thumbnails As Carousel",
+   "text": "Show the 23 thumbnail images as one carousel rather than a long stack.",
+   "viz": "carousel",
+   "id": "dl091"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Scout",
+   "title": "Scout Channel Stats Strip",
+   "text": "Put Channel Stats into the shared stat strip right under the title.",
+   "viz": "tiles",
+   "id": "dl092"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Thai",
+   "title": "Thai Study App Rows Tap Size",
+   "text": "Five study app links measured under 44 pixels tall. Make each one a full-height row.",
+   "viz": "rows",
+   "id": "dl093"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "UpKeep",
+   "title": "UpKeep Full Page Title",
+   "text": "The title reads only Command Center. Use the full name so it matches the others.",
+   "viz": "titlefirst",
+   "id": "dl094"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "UpKeep",
+   "title": "UpKeep Dropdowns Closed By Default",
+   "text": "Four of eight dropdowns start open. Start them closed with counts.",
+   "viz": "collapse",
+   "id": "dl095"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "UpKeep",
+   "title": "UpKeep Video Version Chips",
+   "text": "The 30s and 45s chips measured under 44 pixels. Enlarge them.",
+   "viz": "chips",
+   "id": "dl096"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Video & Photo",
+   "title": "Video And Photo Share Placement",
+   "text": "Share sits in the top bar. Move it into page flow above the footer per the standard.",
+   "viz": "footer",
+   "id": "dl097"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "Video & Photo",
+   "title": "Video And Photo Big Screen Text",
+   "text": "Body text stays 16 pixels at 2560. Apply the big-screen scale.",
+   "viz": "type",
+   "id": "dl098"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "WellNest",
+   "title": "WellNest One Featured Deck",
+   "text": "Two featured deck cards stack above the title. Merge them into one Featured slot under the title.",
+   "viz": "featured",
+   "id": "dl099"
+  },
+  {
+   "theme": "Dashboard-Specific Fixes",
+   "tag": "WellNest",
+   "title": "WellNest Team Chat Collapsed",
+   "text": "Put Team Chat into a collapsed dropdown at the bottom so it does not compete with decisions.",
+   "viz": "collapse",
+   "id": "dl100"
+  }
+ ]
+}
