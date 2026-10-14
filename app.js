@@ -1,5 +1,5 @@
 (function(){var KEY='dashboard-layout-deck-v1',DECK='dashboard-layout-deck',CARDS=[],st={ans:{},notes:{},pos:0,skipped:[]};
-try{var s=JSON.parse(localStorage.getItem(KEY));if(s&&s.ans)st=s}catch(e){}
+try{var s=JSON.parse(localStorage.getItem(KEY));if(s&&s.ans)st=s}catch(e){}if(!Array.isArray(st.skipped))st.skipped=[];
 var SK=KEY+'-submitted',SENT={};try{SENT=JSON.parse(localStorage.getItem(SK))||{}}catch(e){SENT={}}
 var ALL=[];function live(){CARDS=ALL.filter(function(c){return !SENT[c.id]})}
 function markSent(){var n=0;ALL.forEach(function(c){if(!SENT[c.id]&&(st.ans[c.id]||st.notes[c.id])){SENT[c.id]=new Date().toISOString();n++}});try{localStorage.setItem(SK,JSON.stringify(SENT))}catch(e){}live();st.pos=CARDS.length;save();return n}
@@ -47,7 +47,7 @@ function render(){var n=CARDS.length,a=nAns();$('ans').textContent=a+' Answered'
  $('play').style.display='';$('done').classList.remove('on');$('count').textContent=(st.pos+1)+' / '+n;var c=CARDS[st.pos];
  stage.innerHTML='<article class="card" id="cd"><div class="meta"><span class="tag '+(c.tag==='All'?'all':'')+'">'+esc(c.tag==='All'?'All Dashboards':c.tag)+'</span><span class="th">'+esc(c.theme)+'</span></div><h2>'+esc(c.title)+'</h2><p>'+esc(c.text)+'</p><div class="viz"><figure>'+svg(c.viz,0)+'<figcaption>Before</figcaption></figure><figure>'+svg(c.viz,1)+'<figcaption>After</figcaption></figure></div><button class="nb mw-hover'+(st.notes[c.id]?' has':'')+'" id="nb" type="button">'+NOTE+(st.notes[c.id]?'Edit Note':'Add Note')+'</button><div id="nw" hidden><textarea id="nt" placeholder="Optional note for Coach" aria-label="Note">'+esc(st.notes[c.id]||'')+'</textarea></div><span class="stamp" id="sp"></span></article>';
  var nb=$('nb'),nw=$('nw'),nt=$('nt');nb.onclick=function(){nw.hidden=!nw.hidden;if(!nw.hidden)nt.focus()};nt.oninput=function(){var v=nt.value.trim();if(v)st.notes[c.id]=v;else delete st.notes[c.id];save()};drag($('cd'))}
-function answer(v){var c=CARDS[st.pos];if(!c)return;var cd=$('cd');if(v){st.ans[c.id]={answer:v,t:new Date().toISOString()}}
+function answer(v){var c=CARDS[st.pos];if(!c)return;var cd=$('cd');if(v){st.ans[c.id]={answer:v,t:new Date().toISOString()};st.skipped=st.skipped.filter(function(id){return id!==c.id})}else if(st.skipped.indexOf(c.id)<0){st.skipped.push(c.id)}
  if(cd){var dx=v==='no'?-1:v==='yes'||v==='love'?1:0;cd.style.transform='translate('+(dx*120)+'%,'+(dx?0:-30)+'px) rotate('+(dx*12)+'deg)';cd.style.opacity=0}
  st.pos++;if(st.submitted)while(st.pos<CARDS.length&&st.ans[CARDS[st.pos].id])st.pos++;save();setTimeout(render,v?200:120)}
 function drag(el){var x0=null,y0,dx=0,sp=$('sp');
@@ -59,12 +59,12 @@ function counts(){var o={yes:0,love:0,maybe:0,no:0};for(var k in st.ans)o[st.ans
 function results(){return CARDS.map(function(c){var a=st.ans[c.id];return{id:c.id,title:c.title,tag:c.tag,theme:c.theme,answer:a?a.answer:null,note:st.notes[c.id]||'',t:a?a.t:null}})}
 function notesText(){return CARDS.filter(function(c){return st.notes[c.id]}).map(function(c){return c.id+' '+c.title+': '+st.notes[c.id]}).join('\n')}
 function summary(){var o=counts();$('sum').innerHTML=['Love','Yes','Maybe','No'].map(function(k){return '<div><b>'+o[k.toLowerCase()]+'</b>'+k+'</div>'}).join('');var sk=CARDS.length-nAns();$('review').style.display=sk?'':'none';$('review').textContent='Review Skipped ('+sk+')'}
-function payload(partial){var r=results(),un=r.filter(function(x){return !x.answer}).map(function(x){return x.id});return{answers:r,counts:counts(),answered:r.length-un.length,total:r.length,unanswered:un,partial:!!partial}}
+function payload(partial){var r=results(),un=r.filter(function(x){return !x.answer}).map(function(x){return x.id}),sk=(st.skipped||[]).filter(function(id){return un.indexOf(id)>=0});return{answers:r,counts:counts(),answered:r.length-un.length,total:r.length,unanswered:un,skipped:sk,partial:!!partial}}
 document.querySelectorAll('.ab').forEach(function(b){b.onclick=function(){answer(b.dataset.a)}});
 $('skip').onclick=function(){answer(null)};
 $('review').onclick=function(){var i=CARDS.findIndex(function(c){return !st.ans[c.id]});if(i>=0){st.pos=i;save();render()}};
 document.addEventListener('keydown',function(e){if(e.target.tagName==='TEXTAREA')return;if(e.key==='ArrowLeft')answer('no');if(e.key==='ArrowRight')answer('yes')});
-$('early').onclick=function(){var b=this;b.disabled=true;var p={agent:'coach',app:'dashboard-layout-deck',deck:DECK,results:payload(true),notes:notesText(),partial:true,answered:payload(true).answered,total:CARDS.length,unanswered:payload(true).unanswered,sentAt:new Date().toISOString(),ua:navigator.userAgent};
+$('early').onclick=function(){var b=this;b.disabled=true;var p={agent:'coach',app:'dashboard-layout-deck',deck:DECK,results:payload(true),notes:notesText(),partial:true,answered:payload(true).answered,total:CARDS.length,unanswered:payload(true).unanswered,skipped:payload(true).skipped,sentAt:new Date().toISOString(),ua:navigator.userAgent};
  MWSubmit.send(p).then(function(ok){if(!ok&&MWSubmit.blocked){toast('Password needed. Nothing sent.');b.disabled=false;return Promise.reject('blocked')}toast(ok?'Sent':'Saved, Not Sent')}).then(function(){b.disabled=false;st.submitted=true;st.justSent=markSent();st.sentCount=0;save();render();window.scrollTo(0,0)},function(){})};
 function toast(t){var x=$('toast');x.textContent=t;x.style.display='block';setTimeout(function(){x.style.display='none'},2200)}
 function txt(){var o=counts();return 'Dashboard Layout Deck: '+o.love+' Love, '+o.yes+' Yes, '+o.maybe+' Maybe, '+o.no+' No'}
